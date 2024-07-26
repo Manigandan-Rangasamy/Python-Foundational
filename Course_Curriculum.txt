@@ -1,0 +1,54 @@
+Python Foundational Course 
+    Week 1-2: Introduction to Python Basics
+        Week 1:
+            Introduction to Python
+            Installation and Setup
+            Python Syntax
+            Variables
+            Data Types
+        Week 2:
+            Operators and Expressions
+            Control Flow: Conditional Statements (if, else, elif)
+    Week 3-4: Functions and Modules
+        Week 3:
+            Loops (for and while loops)
+            Lists and List Comprehensions
+        Week 4:
+            Functions: Definition, Parameters, Return Values
+            Scope
+            Local vs Global Variables
+            Modules and Packages
+    Week 5-6: Advanced Data Structures and File Handling
+        Week 5:
+            Dictionaries and Sets
+            Tuples
+        Week 6:
+            File Handling: Reading and Writing Files
+            Exception Handling
+    Week 7-8: Object-Oriented Programming (OOP)
+        Week 7:
+            Introduction to OOP: Classes and Objects
+            Attributes, Methods, and Constructors
+        Week 8:
+            Inheritance and Polymorphism
+            Regular Expressions: Basic Pattern Matching and Use Cases
+            Debugging Techniques
+            Using Python's Logging Module
+    Week 9-10: Project-Based Learning
+        Week 9:
+            Project Kick-off
+            Requirements Gathering
+            Planning
+            Project Implementation (Work Sessions with Guidance)
+        Week 10:
+            Project Development and Refinement
+            Final Project Presentation
+            Review and Wrap-up
+
+
+
+
+
+
+
+
