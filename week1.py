@@ -118,7 +118,9 @@ print(my_string)
 # Using % Operator
 name = "Alice"
 age = 30
-greeting = "Hello, %s! You are %s years old." % (name, age)
+graduated = True
+
+greeting = "Hello, %s! You are %s years old." % (name, graduated)
 print(greeting)
 
 #  Using str.format() Method:
