@@ -142,6 +142,17 @@ def myfunc():
 
 myfunc()
 
+def my_func():
+    name = "Manigandan"
+    def my_innerfunc():
+        return name
+    output = my_innerfunc()
+    print(output)
+    print("my inner function is complete")
+
+
+my_func()
+
 # *GLOBAL 
 # A variable created outside of a function is global and can be used by anyone:
 
