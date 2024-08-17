@@ -16,8 +16,9 @@ step4 - Combine the solutions: Combine the solutions of the subproblems to solve
 
 # factorial(n) = n * factorial(n-1)
 # factorial(1) = 1
+
 # factorial(2) = 2*1
-# factorial(5) = 5*4*3*2*1
+# factorial(5) = 5*factorial(4)
 # factorial(7) = 7*6*5*4*3*2*1
 
 #Without recursion
@@ -85,7 +86,7 @@ i.e., to read and write files, along with many other file handling options, to o
 
 Python File Open
 Before performing any operation on the file like reading or writing, first, we have to open that file. 
-For this, we should use Python’s inbuilt function open() 
+For this, we should use Python's inbuilt function open() 
 but at the time of opening, we have to specify the mode, which represents the purpose of the opening file.
 
 # f = open(filename, mode)
@@ -159,7 +160,7 @@ The array object in NumPy is called ndarray, it provides a lot of supporting fun
 
 Arrays are very frequently used in data science, where speed and resources are very important.
 """
-# installing numpy == >python -m pip install numpy
+# installing numpy ==> python -m pip install numpy
 
 import numpy as np
 
@@ -207,7 +208,7 @@ print(c.dtype)
 print(c.transpose())
 
 
-# PANDAS ==> Data Preparation
+# PANDAS ==> Data Preparation ==> python -m pip install pandas
 
 """
 
@@ -291,7 +292,7 @@ Data sets in Pandas are usually multi-dimensional tables, called DataFrames.
 
 A Pandas DataFrame is a 2 dimensional data structure, like a 2 dimensional array, or a table with rows and columns.
 
-Series is like a column, a DataFrame is the whole table.
+#* Series is like a column, a DataFrame is the whole table.
 """
 
 import pandas as pd
