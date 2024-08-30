@@ -1,13 +1,33 @@
-import logging
+# Example of Encapsulation
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name       # Public attribute
+        self.__salary = salary  # Private attribute
 
-logger = logging.getLogger("my_logger")
-logger.setLevel(logging.INFO)
+    # Getter method for salary
+    def get_salary(self):
+        return self.__salary
 
-handler = logging.FileHandler("custom.log")
-handler.setLevel(logging.INFO)
+    # Setter method for salary
+    def set_salary(self, salary):
+        if salary > 0:
+            self.__salary = salary
+        else:
+            print("Invalid salary!")
 
-formatter = logging.Formatter('[%(asctime)s] [%(filename)s:%(lineno)d] %(levelname)s - %(message)s')
-handler.setFormatter(formatter)
+# Creating an object
+emp = Employee("John Doe", 50000)
 
-logger.addHandler(handler)
+# Accessing public attribute
+print(emp.name)  # Output: John Doe
 
+# Accessing private attribute via getter method
+print(emp.get_salary())  # Output: 50000
+
+# Modifying private attribute via setter method
+emp.set_salary(60000)
+print(emp.get_salary())  # Output: 60000
+
+emp.__salary = 90000
+
+print(emp.__salary)
