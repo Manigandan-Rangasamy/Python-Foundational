@@ -34,7 +34,8 @@ print(x.upper())
 """
 ### Introduction to OOP: Classes and Objects
 
-Object-Oriented Programming (OOP) is a programming paradigm that uses "objects" to model real-world entities. It allows developers to organize code in a way that is more modular, reusable, and easier to maintain.
+Object-Oriented Programming (OOP) is a programming paradigm that uses "objects" to model real-world entities. 
+It allows developers to organize code in a way that is more modular, reusable, and easier to maintain.
 
 ---
 
@@ -147,7 +148,8 @@ Encapsulation and abstraction are fundamental principles of Object-Oriented Prog
 
 ### Encapsulation
 
-**Encapsulation** is the concept of bundling data (attributes) and methods (functions) that operate on the data into a single unit called a class. Encapsulation also involves restricting direct access to some of an object’s components, which is a means of preventing accidental interference and misuse of the data.
+**Encapsulation** is the concept of bundling data (attributes) and methods (functions) that operate on the data into a single unit called a class. 
+Encapsulation also involves restricting direct access to some of an object’s components, which is a means of preventing accidental interference and misuse of the data.
 
 #### Key Aspects:
 - Private and Public Access: Encapsulation allows you to control the visibility and accessibility of the class members (attributes and methods). 
@@ -226,7 +228,8 @@ print(emp._Employee__salary)  # Output: 50000
 Even though you can access the mangled name of the private attribute, it is considered a best practice to use getter and setter methods:
 
 - **Encapsulation**: Getter and setter methods help encapsulate the internal state of the object, providing a controlled way to access and modify the data.
-- **Validation and Logic**: Setters allow you to add validation or other logic when changing an attribute's value. For example, you can ensure that a salary is always positive before updating it.
+- **Validation and Logic**: Setters allow you to add validation or other logic when changing an attribute's value. 
+For example, you can ensure that a salary is always positive before updating it.
 
 ### Summary:
 
@@ -314,6 +317,8 @@ Together, encapsulation and abstraction help in building systems that are easier
 
 ---
 """
+
+
 ### Static Methods and Class Methods
 """
 In Python, static methods and class methods are types of methods that belong to a class rather than instances of the class. 
@@ -345,7 +350,8 @@ print(f"Multiplication: {result2}")  # Output: Multiplication: 12
 """
 ### 2. Class Methods
 
-A **class method** is a method that is bound to the class rather than an instance of the class. It takes cls as its first argument, which refers to the class itself. Class methods can be used to modify class-level attributes or perform actions related to the class as a whole.
+A **class method** is a method that is bound to the class rather than an instance of the class. It takes cls as its first argument, which refers to the class itself. 
+Class methods can be used to modify class-level attributes or perform actions related to the class as a whole.
 
 """
 
