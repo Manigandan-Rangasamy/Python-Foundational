@@ -49,7 +49,152 @@ print(my_car.car_details())  # Output: It is a 4-door car.
 - The `Car` class inherits attributes and methods from the `Vehicle` class (like `make` and `model` and the `describe()` method).
 - The `Car` class adds its own attribute `doors` and its own method `car_details()`.
 - Inheritance helps in building specialized classes (like `Car`) that reuse code from general classes (like `Vehicle`), making programming more efficient and less repetitive.
+
+### 1. Single Inheritance
+
+Single inheritance involves one parent class and one child class. The child class inherits from a single parent class.
+
+Parent Class -> Child Class
 """
+
+# Example of Single Inheritance
+class Animal:
+    def sound(self):
+        return "Some generic animal sound"
+
+class Dog(Animal):
+    def sound(self):
+        return "Bark"
+
+# Creating an object of the Dog class
+dog = Dog()
+print(dog.sound())  # Output: Bark
+
+
+"""
+### 2. Multiple Inheritance
+
+Multiple inheritance occurs when a child class inherits from more than one parent class. 
+The child class can access methods and attributes from all the parent classes.
+
+Parent Class 1 -> 
+                -> Child Class
+Parent Class 2 ->
+"""
+
+class Father:
+    def skills(self):
+        return "Driving"
+
+class Mother:
+    def skills(self):
+        return "Cooking"
+
+class Child(Father, Mother):
+    def all_skills(self):
+        # Explicitly calling methods from both parent classes
+        return f"Skills: {Father.skills(self)} and {Mother.skills(self)}"
+
+# Creating an object of the Child class
+child = Child()
+print(child.all_skills())  # Output: Skills: Driving and Cooking
+
+
+"""
+### 3. Multilevel Inheritance
+
+In multilevel inheritance, a class inherits from a parent class, which in turn inherits from another parent class. 
+This forms a chain of inheritance.
+
+Grandparent Class -> Parent Class -> Child Class
+"""
+
+# Example of Multilevel Inheritance
+class Animal:
+    def __init__(self, name):
+        self.name = name
+    
+    def sound(self):
+        return "Some generic animal sound"
+
+class Dog(Animal):
+    def breed(self, breed_name):
+        self.breed_name = breed_name
+        return f"{self.name} is a {self.breed_name}"
+
+class Bulldog(Dog):
+    def sound(self):
+        return "Bulldog Barks!"
+
+# Creating an object of the Bulldog class
+bulldog = Bulldog("Max")
+print(bulldog.breed("Bulldog"))  # Output: Max is a Bulldog
+print(bulldog.sound())           # Output: Bulldog Barks!
+
+
+"""
+### 4. Hierarchical Inheritance
+
+In hierarchical inheritance, multiple child classes inherit from the same parent class. 
+Each child class has access to the methods and attributes of the parent class.
+
+           Parent Class
+           /          \
+    Child Class 1   Child Class 2
+"""
+
+# Example of Hierarchical Inheritance
+class Animal:
+    def sound(self):
+        return "Some generic animal sound"
+
+class Dog(Animal):
+    def sound(self):
+        return "Bark"
+
+class Cat(Animal):
+    def sound(self):
+        return "Meow"
+
+# Creating objects of Dog and Cat classes
+dog = Dog()
+cat = Cat()
+print(dog.sound())  # Output: Bark
+print(cat.sound())  # Output: Meow
+
+
+"""
+### 5. Hybrid Inheritance
+
+Hybrid inheritance is a combination of two or more types of inheritance. 
+It can involve any combination of the other inheritance types, such as multiple and multilevel inheritance.
+
+Parent Class -> Child Class 1
+        |       \
+   Child Class 2   Child Class 3
+"""
+
+# Example of Hybrid Inheritance
+class Vehicle:
+    def start(self):
+        return "Starting the vehicle"
+
+class Car(Vehicle):
+    def wheels(self):
+        return 4
+
+class Bike(Vehicle):
+    def wheels(self):
+        return 2
+
+class Hybrid(Car, Bike):
+    def wheels(self):
+        return f"Hybrid vehicle has {super().wheels()} wheels"
+
+# Creating an object of the Hybrid class
+hybrid = Hybrid()
+print(hybrid.start())  # Output: Starting the vehicle
+print(hybrid.wheels())  # Output: Hybrid vehicle has 4 wheels
 
 """
 ### Polymorphism

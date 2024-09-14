@@ -30,8 +30,8 @@ class ToDo:
             print("No notes available.")
         else:
             print("\nYour ToDo Notes:")
-            for i, note in enumerate(self.notes, 1):
-                print(f"{i}. {note}")
+            for i in range(len(self.notes)):
+                print(f"{i+1}. {self.notes[i]}")
 
     # Method to delete a note by its index
     def delete_note(self, index):
