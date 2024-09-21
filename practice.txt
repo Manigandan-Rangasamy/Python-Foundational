@@ -1,6 +1,12 @@
-Coding practice : 
+Coding practice (problem solving): 
 https://www.hackerrank.com/mountblue-technologies
+
+options for problem solving:
+    - leetcode
+    - hackerrank
+    - codechef
 
 Python practice projects :
 https://youtu.be/NpmFbWO6HPU?si=FFlCMIMaxqFdTJfe
+
 
